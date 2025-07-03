@@ -5,19 +5,19 @@ const port = 3000;
 app.use(express.static(__dirname))
 
 app.get('/', (req, res)=> {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/Code-camp/index.html');
 });
 
 app/.get('/index', (req, res)=> {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/Code-camp/index.html');
 });
 
 app.get('/other', (req, res)=> {
-  res.send(__dirname + '/other.html');
+  res.send(__dirname + '/Code-camp/other.html');
 });
 
 app.get('/thing', (req, res)=> {
-  res.send(__dirname + '/thing.html');
+  res.send(__dirname + '/Code-camp/thing.html');
 });
 
 app.listen(port, () => {
