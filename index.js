@@ -9,15 +9,15 @@ app.get('/', (req, res)=> {
 });
 
 app/.get('/index', (req, res)=> {
-  res.sendFile(__dirname + 'index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/other', (req, res)=> {
-  res.send(__dirname + '/index.html');
+  res.send(__dirname + '/other.html');
 });
 
 app.get('/thing', (req, res)=> {
-  res.send(__dirname + '/index.html');
+  res.send(__dirname + '/thing.html');
 });
 
 app.listen(port, () => {
